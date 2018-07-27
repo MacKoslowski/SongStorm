@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="GUI.SongBuilderView">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="390.0" prefWidth="509.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cc00ff" height="364.0" layoutX="0.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="640.0" />
+        <Text fill="#fff966" fontSmoothingType="GRAY" layoutX="262.0" layoutY="69.0" scaleX="2.2252309128674708" scaleY="2.483561796500613" smooth="false" strikethrough="false" strokeType="OUTSIDE" strokeWidth="0.0" text="SONG STORM" underline="false">
+          <font>
+            <Font name="Bauhaus 93" size="18.0" fx:id="x1" />
+          </font>
+        </Text>
+        <Text font="$x1" fontSmoothingType="GRAY" layoutX="44.0" layoutY="228.0" scaleX="1.2663545681712398" scaleY="2.4210832063202434" smooth="false" strikethrough="false" strokeType="OUTSIDE" strokeWidth="0.0" text="MODE:" underline="false">
+          <fill>
+            <Color blue="0.400" green="0.832" red="1.000" fx:id="x2" />
+          </fill>
+        </Text>
+        <Text fill="$x2" font="$x1" fontSmoothingType="GRAY" layoutX="46.0" layoutY="287.0" scaleX="1.5060737862353524" scaleY="2.1006600988891186" smooth="false" strikethrough="false" strokeType="OUTSIDE" strokeWidth="0.0" text="BPM:" underline="false" />
+        <Text fill="$x2" font="$x1" fontSmoothingType="GRAY" layoutX="50.0" layoutY="160.0" scaleX="1.752600721258683" scaleY="1.8749210529473013" smooth="false" strikethrough="false" strokeType="OUTSIDE" strokeWidth="0.0" text="KEY:" underline="false" />
+        <TextArea fx:id="key" layoutX="129.0" layoutY="135.0" prefHeight="43.0" prefWidth="121.9998779296875" wrapText="true" />
+        <TextArea fx:id="bpm" layoutX="129.0" layoutY="256.0" prefHeight="41.5745849609375" prefWidth="121.0" wrapText="true" />
+        <Button font="$x1" layoutX="383.0" layoutY="125.0" mnemonicParsing="false" onAction="#onGenerate" prefHeight="172.5745849609375" prefWidth="187.0" text="GENERATE" textFill="$x2" />
+        <TextArea id="bpm" fx:id="mode" layoutX="129.0" layoutY="191.0" prefHeight="41.5745849609375" prefWidth="121.0" wrapText="true" />
+      </children>
+    </AnchorPane>
+  </children>
+  <stylesheets>
+    <URL value="@stormStyle.css" />
+  </stylesheets>
+</VBox>

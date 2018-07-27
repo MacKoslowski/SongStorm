@@ -1,0 +1,13 @@
+.text-area .content{
+    -fx-background-color: rgb(241, 176, 236);
+}
+
+.text-area{
+    -fx-font-family: Helvetica;
+    -fx-font-size: 15;
+    -fx-text-fill: black;
+    -fx-display-caret:true;
+}
+.button {
+    -fx-background-color: rgb(77, 195, 241);
+}
