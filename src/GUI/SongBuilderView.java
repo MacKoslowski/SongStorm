@@ -75,13 +75,12 @@ public class SongBuilderView extends Application {
 	@FXML
 	public void onGenerate()
 	{
-		builder = new SongGenerator();
-		song = builder.generateSong();
+		song = SongGenerator.generateSong();
 		
 				
 		String bpmString = "" + song.getBPM();
-		String keyString = song.getNote() + " " + song.getMood();
-		String modeString = song.getMode();
+		String keyString = song.getNote();
+		String modeString = song.getMode() + " (" + song.getMood() + ") ";
 		
 
 		key.setText(keyString);
