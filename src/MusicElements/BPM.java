@@ -5,14 +5,10 @@ public class BPM {
 
 	public static int generateBPM()
 	{
-		int difference = 180 - 90;
+		int ceiling = 180;
+		int floor = 90;
 		
-		double index = difference * Math.random();
-		
-		int roundIndex = (int) Math.round(index);
-		
-		return 90 + roundIndex;
-		
+		return generateBPM(ceiling, floor);
 		
 	}
 	
@@ -23,7 +19,7 @@ public class BPM {
 		
 		double index = difference * Math.random();
 		
-		int roundIndex = (int) Math.round(index);
+		int roundIndex = (int) Math.floor(index);
 		
 		return floor + roundIndex;
 		
