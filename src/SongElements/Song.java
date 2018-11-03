@@ -7,9 +7,7 @@ public class Song {
 	private String note;
 	private String mood;
 	private String mode;
-	private int bpm = 150;
-	private String[] lyrics;
-	private String[] chords;
+	private int bpm;
 	
 	public Song(String note, String mood, String mode, int bpm)
 	{

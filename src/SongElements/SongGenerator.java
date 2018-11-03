@@ -5,7 +5,7 @@ import MusicElements.*;
 public class SongGenerator {
 
 	
-	public Song generateSong()
+	public static Song generateSong()
 	{
 	
 		String mood = Mood.randomMood();
@@ -31,7 +31,7 @@ public class SongGenerator {
 		return newSong;
 	}
 	
-	public Song generateSong(int floor, int ceiling)
+	public static Song generateSong(int floor, int ceiling)
 	{
 	
 		String mood = Mood.randomMood();
